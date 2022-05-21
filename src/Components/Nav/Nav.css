@@ -1,0 +1,26 @@
+.navigation { 
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 1rem;
+  
+}
+
+.nav-todo {
+  margin: 0 1rem 0 0;
+  text-decoration: none;
+}
+
+.nav-addtodo {
+  text-decoration: none;
+}
+
+.nav-todo:hover, .nav-addtodo:hover {
+  color: blue
+}
+
+.nav-todo:active, .nav-addtodo:active {
+  color: red
+}
+
+

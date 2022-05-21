@@ -14,14 +14,14 @@ const [todos, setTodos] = useState([])
 
 
   return (
-    <>
+    <main className='main'>
       <Nav />
       <Routes>
         <Route path='/' element={<ToDoList todos={todos} />} 
         />
         <Route path='/addtodo' element={<AddToDo />}/>
       </Routes>
-    </>
+    </main>
     
   );
 }
