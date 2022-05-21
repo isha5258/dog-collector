@@ -1,4 +1,4 @@
-function addToDo() {
+function AddToDo() {
   return ( 
     <>
       <h1>i am new here</h1>
@@ -6,4 +6,4 @@ function addToDo() {
   );
 }
 
-export default addToDo;
+export default AddToDo;
