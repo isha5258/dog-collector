@@ -12,17 +12,21 @@ function App() {
 //state
 const [todos, setTodos] = useState([])
 
+  const handleAddTodo = newTodo => {
+    setTodos([...todos, newTodo])
+  }
 
   return (
-    <main className='main'>
+    <>
       <Nav />
-      <Routes>
-        <Route path='/' element={<ToDoList todos={todos} />} 
-        />
-        <Route path='/addtodo' element={<AddToDo />}/>
-      </Routes>
-    </main>
-    
+      <main className='main'>
+        <Routes>
+          <Route path='/' element={<ToDoList todos={todos} />} 
+          />
+          <Route path='/addtodo' element={<AddToDo  handleAddTodo={handleAddTodo} />}/>
+        </Routes>
+      </main>
+    </>
   );
 }
 

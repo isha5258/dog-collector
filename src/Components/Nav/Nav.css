@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: right;
-  margin: 1rem;
-  
+  margin: 0;
+  height: clamp(2rem, 10vw, 3rem);
+  background-color: antiquewhite;
 }
 
 .nav-todo {
@@ -13,6 +14,7 @@
 
 .nav-addtodo {
   text-decoration: none;
+  margin: 0 1rem 0 0;
 }
 
 .nav-todo:hover, .nav-addtodo:hover {
